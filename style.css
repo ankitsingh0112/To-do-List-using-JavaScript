@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: monospace;
+    background-image: linear-gradient(to right, white, rgb(0, 195, 255), white);
+}
+
+.addTask{
+    margin-top: 25px;
+}
+
+.addTask input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(5, 77, 231, 0.849);
+    font-size: 1.25rem;
+    color: white;
+}
+
+.addTask input:hover,
+.addTask input:focus{
+    background-image: linear-gradient(to left, rgb(0, 195, 255), rgba(5, 77, 231, 0.849));
+}
+
+::placeholder{
+    font-size: 1.025rem;
+    font-family: monospace;
+}
+
+input:hover::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: monospace;
+    border: 2px solid rgba(5, 77, 231, 0.849);
+    transition: all 300ms ease-in-out;
+}
+
+button:hover{
+    background-image: linear-gradient(to left, rgb(0, 195, 255), rgba(5, 77, 231, 0.849));
+    color: white;
+}
+
+#todo_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    margin-top: 10px;
+}
+
+.todo{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(5, 77, 231, 0.849);
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+}
+
+.todo span {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.todo .btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dlt,
+.done {
+    border: none;
+    padding: 0 10px;
+    background-image: none;
+    transition: all 300ms ease-in-out;
+}
+
+.done:hover{
+    color: rgba(5, 77, 231, 0.849);
+}
+
+.dlt:hover{
+    color: red;
+}
